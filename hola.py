@@ -1,0 +1,1 @@
+soc un fitxer py
