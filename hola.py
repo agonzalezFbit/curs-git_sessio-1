@@ -1,1 +1,1 @@
-soc un fitxer py
+soc un fitxer pyyyyy
