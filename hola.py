@@ -1,5 +1,5 @@
 soc un fitxer pyyyyy
 
 hola() {
-    print("Hola")
+    print("Hola v.1")
 }
