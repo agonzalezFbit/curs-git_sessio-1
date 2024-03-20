@@ -13,6 +13,7 @@ jobs:
             name: upload
             path: arxiu-text.txt
     Test-download-artifact:
+        needs: [Test-push-artifact]
         runs-on: ubuntu-latest
         steps:
         - name: Download output file
