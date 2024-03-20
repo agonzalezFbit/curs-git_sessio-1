@@ -15,6 +15,6 @@ jobs:
     Test-variable-job:
         runs-on: ubuntu-latest
         env:
-            VARIABLE_1: Variable de job
+            VARIABLE_2: Variable de job
         steps:
-        - run: echo "Bonjour, ${{ vars.VARIABLE_1 }}! 🚀"
+        - run: echo "Bonjour, ${{ env.VARIABLE_2 }}! 🚀"
