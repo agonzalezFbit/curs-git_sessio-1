@@ -1,0 +1,7 @@
+name: GitHub Actions Environment variables
+run-name: ${{ github.actor }} is testing out GitHub Actions 🚀
+on:
+    push
+jobs:
+    steps:
+        - run: echo "Hello, ${{ vars.VARIABLE_1 }}! 🚀"
