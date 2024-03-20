@@ -1,0 +1,20 @@
+name: Github Artifact Test
+run-name: ${{ github.actor }} is testing out GitHub Actions 🚀
+on: [push]
+jobs:
+    Test-push-artifact:
+        runs-on: ubuntu-latest
+        steps:
+        - name: Upload output file
+          uses: actions/upload-artifact@v4
+          with:
+            name: upload
+            path: arxiu-text.txt
+    Test-download-artifact:
+        runs-on: ubuntu-latest
+        steps:
+        - name: Download output file
+          uses: actions/download-artifact@v4
+          with:
+            name: upload
+        
