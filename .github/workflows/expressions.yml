@@ -8,4 +8,10 @@ jobs:
         steps:
         - name: exec on push on main  
           if: github.event_name == 'push' && github.ref == 'refs/heads/main'
-          run: echo "This is a push on main"
+          run: echo "This is a push on main"\
+    Test-expression-on-pull-request-on-main:
+        runs-on: ubuntu-latest
+        steps:
+        - name: exec on pull request on main  
+          if: github.event_name == 'pull_request' && github.base_ref == 'main'
+          run: echo "This is a pull request on main"\
