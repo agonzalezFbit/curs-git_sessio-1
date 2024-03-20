@@ -7,7 +7,7 @@ jobs:
     Test-variable-repo:
         runs-on: ubuntu-latest
         steps:
-        - run: echo "Hello, ${{ vars.VARIABLE_1 }}! 🚀"
+        - run: echo "Hola, ${{ vars.VARIABLE_1 }}! 🚀"
     Test-variable-workflow:
         runs-on: ubuntu-latest
         steps:
