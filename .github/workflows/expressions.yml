@@ -1,0 +1,11 @@
+name: Github Artifact Test
+run-name: ${{ github.actor }} is testing out GitHub Actions 🚀
+on: 
+  [push, pull_request] 
+jobs:
+    Test-expression-on-push-on-main:
+        runs-on: ubuntu-latest
+        steps:
+        - name: exec on push on main  
+          if: github.event_name == 'push' && github.ref == 'refs/heads/main'
+          run: echo "This is a push on main"
