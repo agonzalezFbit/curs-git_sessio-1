@@ -5,6 +5,8 @@ jobs:
     Test-push-artifact:
         runs-on: ubuntu-latest
         steps:
+        - name: get repo  
+          uses: actions/checkout@v4
         - name: Upload output file
           uses: actions/upload-artifact@v4
           with:
