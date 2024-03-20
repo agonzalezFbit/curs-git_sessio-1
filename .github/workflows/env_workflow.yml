@@ -1,6 +1,6 @@
 name: GitHub Actions Environment variables
 run-name: ${{ github.actor }} is testing out GitHub Actions 🚀
-on: [push]
+on: [workflow_dispatch]
 env:
     VARIABLE_2: Variable de workflow
 jobs:
